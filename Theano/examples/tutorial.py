@@ -4,7 +4,7 @@ from theano import pp
 from theano import shared
 import theano.tensor
 import theano.tensor as T
-from sympy.strategies.branch.tests.test_core import inc
+
 
 x = T.dscalar('x')
 y = T.dscalar('y')
