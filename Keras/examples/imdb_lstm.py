@@ -1,16 +1,20 @@
 from __future__ import absolute_import
 from __future__ import print_function
-import numpy as np
-np.random.seed(1337)  # for reproducibility
 
-from keras.preprocessing import sequence
-from keras.optimizers import SGD, RMSprop, Adagrad
-from keras.utils import np_utils
-from keras.models import Sequential
+from keras.datasets import imdb
 from keras.layers.core import Dense, Dropout, Activation
 from keras.layers.embeddings import Embedding
 from keras.layers.recurrent import LSTM, GRU
-from keras.datasets import imdb
+from keras.models import Sequential
+from keras.optimizers import SGD, RMSprop, Adagrad
+from keras.preprocessing import sequence
+from keras.utils import np_utils
+
+import numpy as np
+
+
+np.random.seed(1337)  # for reproducibility
+
 
 '''
     Train a LSTM on the IMDB sentiment classification task.
