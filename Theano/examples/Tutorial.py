@@ -80,3 +80,5 @@ foo = T.scalar(dtype=state.dtype)
 skip_shared = function([inc, foo], fn_of_state, givens=[(state, foo)])
 print skip_shared(1, 3)
 print state.get_value()
+
+# Using Random Numbers
