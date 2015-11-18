@@ -65,7 +65,7 @@ def sample(a, temperature=1.0):
     return np.argmax(np.random.multinomial(1, a, 1))
 
 # train the model, output generated text after each iteration
-for iteration in range(1, 60):
+for iteration in range(1, 60):      # default range is from 1 to 60.
     print()
     print('-' * 50)
     print('Iteration', iteration)
